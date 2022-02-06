@@ -1,0 +1,511 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.fullBody{
+    display: flex;
+}
+
+.navbar{
+    height: 100%;
+    padding-left: 3.8em;
+    width: 19%;
+    border-right-style: outset;
+    border-right-width: 1px;
+    border-right-color: rgb(138, 138, 138);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.navlink{
+    /* background-color: #656C73; */
+    display: flex;
+    text-decoration: none;
+    width: 80%;
+    color: rgb(199, 199, 199);
+    padding: 0.55em;
+    font-size: 1.45em;
+    border-radius: 2em;
+}
+
+.navIcon{
+    width: 0.8em;
+}
+
+.navLabel{
+    padding-left: 1em;
+}
+
+.navButton{
+    background-color: #1A8CD8;
+    margin-top: 1em;
+    color: rgb(255, 255, 255);
+    padding: 1.3em;
+    border: none;
+    border-radius: 2em;
+    width: 16em;
+}
+
+.userCard{
+    
+    margin-top: 5em;
+    display: flex;
+    background-color: transparent;
+    border-radius: 2em;
+    padding: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: none;
+}
+
+.navpic{
+    width: 3.4em;
+    height: 3.5em;
+    border-radius: 5em;
+}
+
+.navInfo{
+    padding-left: 0.4em;
+    padding-top: 0.4em;
+}
+
+.navName{
+    padding-left: 1em;
+    color: aliceblue;
+}
+
+.navId{
+    padding-top: 0.3em;
+    color: rgb(199, 199, 199);
+}
+
+.navMore{
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+.cardIcon{
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar {
+      width: 3em;
+      padding-left: 0.2em;
+    }
+    .navLabel{
+        display: none;
+    }
+    .navButton{
+        width:3em;
+        height: 3em;
+        padding: 0em;
+    }
+    .usercard{
+        width: 1em;
+        bottom: 20;
+        left: 5;
+        background-color: black;
+    }
+    .navpic{
+        width: 3em;
+        height: 3em;
+    }
+    .navInfo{
+        display: none;
+    }
+    
+    .navName{
+        display: none;
+    }
+    
+    .navId{
+        display: none;
+    }
+    
+    .navMore{
+        display: none;
+    }
+
+    .userCard{
+        padding-left: 0em;
+    }
+  }
+
+
+
+
+.main{
+    margin-left: 23.3%;
+    margin-right: 31%;
+    flex: 1.4;
+}
+
+.mainHeader{
+    padding-top: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    color: rgb(201, 201, 201);
+    font-size: 1.3em;
+    background-color: black;
+    z-index: 2;
+}
+
+.homeheader{
+    padding-left: 1em;
+}
+
+.starheader{
+    padding-right: 1em;
+    background-color: transparent;
+    color: rgb(201, 201, 201);
+    border: none;
+}
+
+.tweet{
+    display: flex;
+    padding-top: 1em;
+    padding-left: 1em;
+    border-bottom-style: outset;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(138, 138, 138);
+}
+
+.tweetPicture{
+    width: 3em;
+    height: 3em;
+    border-radius: 5em;
+}
+
+.inputArea{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* margin-left: 1em; */
+    padding: 1em;
+}
+
+.tweetInput{
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: x-large;
+    border: none;
+    resize: none;
+    
+}
+
+.visibility{
+    padding-top: 0.4em;
+    padding-bottom: 1em;
+    border-bottom-style: outset;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(138, 138, 138);
+}
+
+.visibilityLink{
+    color: #1A8CD8;
+    font-size: small;
+}
+
+.tweetOptions{
+    display: flex;
+}
+
+.tweetOptionButton{
+    color: #1A8CD8;
+    background-color: black;
+    border: none;
+    font-size: 1em;
+    margin-right: 0.8em;
+    margin-top: 1.1em;
+    border-radius: 3em;
+}
+
+.mainTweet{
+    margin-left: auto;
+}
+
+.tweetButton{
+    background-color: #1A8CD8;
+    color: rgb(255, 255, 255);
+    margin-top: 1em;
+    padding: 0.8em ;
+    border: none;
+    border-radius: 2em;
+    width: 6em;
+}
+
+
+.post{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(138, 138, 138);
+}
+
+.info{
+    display: flex;
+}
+
+.profileImageTag{
+    width: 3.3em;
+    height: 3.3em;
+    border-radius: 2em;
+    margin-left: 1em;
+    margin-top:1em;
+}
+
+.textInfo{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 1em;
+}
+
+.profileInfo{
+    display: flex;
+    margin-top: 1em;
+    
+}
+
+.profileName,.profileImageTag{
+    cursor: pointer;
+}
+
+.profileId{
+    cursor: pointer;
+    margin-left: 0.6em;
+    font-size: 0.9em;
+    color: rgb(138, 138, 138);
+}
+
+.postTime{
+    margin-left: 0.6em;
+    color: rgb(138, 138, 138);
+}
+
+.moreOption{
+    cursor: pointer;
+    margin-left: auto;
+    color: rgb(138, 138, 138);
+    font-size: 0.8em;
+}
+
+.caption{
+    margin-top: 0.4em;
+}
+
+.postMedia{
+    margin-left: 5em;
+    
+}
+
+.postMediaImage{
+    width: 70%;
+    height: auto;
+    border-radius: 1em;
+}
+
+.reaction{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.reactionButton{
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(138, 138, 138);
+    border: none;
+    font-size: 1em;
+}
+
+.reactionButton:hover{
+    color: rgb(50, 173, 255);
+}
+
+@media only screen and (max-width: 1200px) {
+    .main{
+        margin-left: 9%;
+        flex: 1.4;
+    }
+}
+
+.rightBar{
+    display: flex;
+    flex: 1;
+    width: 31%;
+    border-left-style: inset;
+    border-left-width: 1px;
+    border-left-color: rgb(138, 138, 138);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.rightbarContainer{
+    /* background-color: darkgray; */
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 1000px) {
+    .rightBar{
+        display: none;
+    }
+    .main{
+        margin-right: 0;
+    }
+}
+
+.search{
+    border-radius: 2em;
+    padding: 0.8em;
+    background-color: #202327;
+    color: #656C73;
+    height: 1em;
+    width: 85%;
+    padding-left: 1.4em;
+}
+
+.searchbar{
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    padding-left: 0.8em;
+    font-size: 1em;
+}
+input{
+    outline: none;
+    color: #a8a8a8;
+}
+textarea{
+    outline: none;
+    color: #a8a8a8;
+}
+
+.trendingContainer{
+    background-color: #15181C;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 2em;
+}
+
+.trendingHeading{
+    font-size: 1.4em;
+}
+
+.trendingStory{
+    display: flex;
+    width: 90%;
+    margin-top: 0.4em;
+}
+
+.trendingInfo{
+    margin-top: 1em;
+    color: #656C73;
+    font-size: small;
+}
+
+.trendingNews{
+    padding-top: 0.6em;
+}
+
+.trendingImage{
+    padding-top: 1em;
+}
+
+.trendingImg{
+    float: right;
+    border-radius: 1em;
+    width: 60%;
+    height: 110%;
+}
+
+.footer{
+    padding: 1em;
+}
+
+.footLink{
+    color: #656C73;
+    text-decoration: none;
+    padding: 0.4em;
+    font-size: 0.9em;
+}
+
+.followcard{
+    margin-top: 1em;
+    display: flex;
+    background-color: transparent;
+    border: none;
+}
+
+.followInfo{
+    margin-left: 1em;
+}
+
+.followId{
+    color: #656C73;
+}
+
+.followbuttondiv{
+    margin-left: auto;
+    margin-top: 0.6em;
+}
+
+.followButton{
+    padding: 0.7em;
+    border-radius: 2em;
+    border: none;
+    font-weight: bold;
+}
+
+.navButton:hover,.tweetButton:hover{
+    cursor: pointer;
+    background-color: #0976be;
+}
+
+.followButton:hover{
+    cursor: pointer;
+    background-color: rgb(170, 168, 168);
+}
+
+.usercard:hover{
+    background-color: #656c7328;
+    cursor: pointer;
+}
+
+.navbar>a:hover{
+    background-color: #656c7328;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.trendingNews>a:hover{
+    text-decoration: underline;
+}
+
+.followInfo:hover{
+    cursor: pointer;
+}
+
+.footer>a:hover{
+    text-decoration: underline;
+}
+
+.tweetOptionbutton:hover{
+    cursor: pointer;
+    background-color: #2086ca33;
+}
